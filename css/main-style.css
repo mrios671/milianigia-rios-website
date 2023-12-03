@@ -85,10 +85,20 @@ ul.nav a {
 .headshot{
     width: 300px;
     height: auto;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 img.icon {
     height: 125px;
     width: 125px;
+}
+.languages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 /*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {
@@ -107,3 +117,6 @@ img.icon {
     100% { transform:translate(0,20px); opacity: 0; }
 }
 
+/*h1{*/
+/*    color: #b5e1ff;*/
+/*}*/
