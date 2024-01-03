@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
 
-body{
+body {
     margin: 0;
-    /*background-color: #f4feff;*/
 }
 .video-wrapper {
     width: 100%;
@@ -37,7 +36,7 @@ video {
     max-width: 900px;
     max-height: 400px;
 }
-ul.nav {
+ul.nav-header {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,12 +47,12 @@ ul.nav {
     text-align: right;
 }
 
-ul.nav li {
+ul.nav-header li {
     display: inline;
     margin-right: 20px;
 }
 
-ul.nav a {
+ul.nav-header a {
     text-decoration: none;
     color: #fff;
     font-family: 'Playfair Display', serif ;
@@ -107,29 +106,30 @@ img.icon {
 /*.white-space {*/
 /*    margin: 80px;*/
 /*}*/
-#projects h1 {
+.text-center {
     position: relative;
     z-index: 4;
 }
 
-.svg-container {
+.svg-bg {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     right: 0;
     bottom: 0;
-    overflow: hidden;
+    height: 100vh; /* Added this line */
 }
-.svg-bg {
+.svg-container {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
 }
-
+/*media query the height*/
+svg {
+    width: 100%;
+    height: 880px;
+}
 .projects-container {
     position: absolute;
     top: 0;
@@ -141,19 +141,35 @@ img.icon {
     align-items: center;
     justify-content: center;
     z-index: 3;
+    /*padding: 15px; !* Added Padding *!*/
 }
-
 .project-card {
-    margin: 15px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 15px;
 }
 
-/*animated scroll arrow animation*/
+.project-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-description {
+    width: 50%;
+    padding: 0 20px;
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
 @-webkit-keyframes fade_move_down {
     0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
     50%  { opacity: 1;  }
@@ -169,7 +185,3 @@ img.icon {
     50%  { opacity: 1;  }
     100% { transform:translate(0,20px); opacity: 0; }
 }
-
-/*h1{*/
-/*    color: #e9f4ff;*/
-/*}*/

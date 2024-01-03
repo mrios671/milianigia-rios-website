@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Bootsrtap Link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,55 +16,60 @@
 </head>
 <body>
 <div class="page-wrapper">
-    <!--    Navbar-->
-    <div id="navbar">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link">Disabled</a>
-            </li>
-        </ul>
-    </div>
-    <!--    Hero-->
-    <main class="video-wrapper">
-        <video playsinline autoplay muted loop poster="img/water.jpg">
-            <source src="video/water.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="header">
-            <img class="title-image" src="img/new-title.PNG">
-            <p>Full-stack web developer with a background in Business</p>
-            <!--        <p>Hi, my name is </p>-->
-            <!--        <h1>Milianigia Rios</h1>-->
-            <a href="#main" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon>
-            </a>
+    <header>
+        <!--    Navbar-->
+        <div id="navbar">
+            <ul class="nav nav-header justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Disabled</a>
+                </li>
+            </ul>
         </div>
-    </main>
-    <div class="white-space"></div>
-
-    <!--About-->
-    <section class="container p-5 m-5" id="main">
-        <div class="row">
-            <div class="col d-flex align-items-center justify-content-center">
-                <img src="img/codeup_headshot.jpg" class="headshot">
+        <!--    Hero-->
+        <main class="video-wrapper">
+            <video playsinline autoplay muted loop poster="img/water.jpg">
+                <source src="video/water.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="header">
+                <img class="title-image" src="img/new-title.PNG">
+                <p>Full-stack web developer with a background in Business</p>
+                <!--        <p>Hi, my name is </p>-->
+                <!--        <h1>Milianigia Rios</h1>-->
+                <a href="#main" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon>
+                </a>
             </div>
-            <div class="col">
-                <h2>About Me</h2>
-                <p>(something about my self Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci amet
-                    eaque hic iure libero minus, molestiae nobis nostrum, obcaecati odio placeat provident quam quasi
-                    quod reprehenderit, veniam vero voluptate.)</p>
+        </main>
+        <div class="white-space"></div>
+    </header>
+    <main>
+        <!--About-->
+        <section class="container p-5 m-5" id="main">
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-center">
+                    <img src="img/codeup_headshot.jpg" class="headshot">
+                </div>
+                <div class="col">
+                    <h2>About Me</h2>
+                    <p>(something about my self Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci
+                        amet
+                        eaque hic iure libero minus, molestiae nobis nostrum, obcaecati odio placeat provident quam
+                        quasi
+                        quod reprehenderit, veniam vero voluptate.)</p>
+                </div>
             </div>
-        </div>
-        <!--    languages-->
-        <div class="container p-5 m-5">
+        </section>
+        <section class="container p-5 m-5" id="languages">
+            <!--    languages-->
             <div class="row">
                 <h2 class="p-5 d-flex justify-content-center align-items-center">Programming Languages</h2>
                 <div class="row languages-container">
@@ -100,52 +104,70 @@
                     <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-plain.svg"/>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--Projects-->
-    <section class="svg-bg">
-
-        <div class="container p-5 m-5" id="projects">
-            <h1 class="text-center">My Recent Projects</h1>
-            <div class="projects-container">
-                <!-- Project Card -->
-                <div class="project-card">
-                    <div class="col-md-4">
-                        <img src="img/img.png" alt="Project 1" class="img-fluid">
+        </section>
+        <!--Projects-->
+        <section class="container" id="projects">
+<!--            <div class="svg-container">-->
+                <!--            <div class="container">-->
+<!--                <div class="svg-bg">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800"-->
+<!--                         preserveAspectRatio="none" fill="none">-->
+<!--                        <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                              d="M0 72.7278C0 72.7278 478.202 0 720 0C961.798 0 1440 72.7278 1440 72.7278V837.874H0V72.7278Z"-->
+<!--                              fill="#d3f3ff"/>-->
+<!--                    </svg>-->
+<!--                </div>-->
+<!--                <div class="projects-container">-->
+                    <div class="container p-5">
+                        <h1 class="text-center">My Recent Projects</h1>
                     </div>
-                    <div class="col-md-8">
-                        <h2>Project 1</h2>
-                        <p>Brief summary of project 1.</p>
-                        <a href="project1.html">Learn More</a>
+                    <!-- You can dynamically generate these cards -->
+                    <div class="project-card">
+                        <img class="project-image" src="img/img.png" alt="Image 1">
+                        <div class="project-description">
+                            <h2>Project 1</h2>
+                            <p>Description of Project 1</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="col-md-4">
-                        <img src="img/img.png" alt="Project 2" class="img-fluid">
+                    <div class="project-card">
+                        <img class="project-image" src="img/img.png" alt="Image 2">
+                        <div class="project-description">
+                            <h2>Project 2</h2>
+                            <p>Description of Project 2</p>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <h2>Project 2</h2>
-                        <p>Brief summary of project 2.</p>
-                        <a href="project2.html">Learn More</a>
+                    <div class="project-card">
+                        <img class="project-image" src="img/img.png" alt="Image 1">
+                        <div class="project-description">
+                            <h2>Project 3</h2>
+                            <p>Description of Project 3</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="svg-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1080" viewBox="0 0 1440 1000"
-                     preserveAspectRatio="none" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M0 72.7278C0 72.7278 478.202 0 720 0C961.798 0 1440 72.7278 1440 72.7278V837.874H0V72.7278Z"
-                          fill="#d3f3ff"/>
-                </svg>
-            </div>
-        </div>
-    </section>
-
-
+                    <div class="project-card">
+                        <img class="project-image" src="img/img.png" alt="Image 2">
+                        <div class="project-description">
+                            <h2>Project 4</h2>
+                            <p>Description of Project 4</p>
+                        </div>
+                    </div>
+<!--                </div>-->
+<!--            </div>-->
+            <!--        </div>-->
+        </section>
+    </main>
 </div>
-
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+<script src="js/main-js.js"></script>
 </body>
 </html>
